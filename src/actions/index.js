@@ -25,7 +25,7 @@ export const ME = "ME"
 export const LOGOUT = "LOGOUT"
 
 export const login = async (username, password) => {
-    const callLogin = await fetch('http://ptudwnc06.herokuapp.com/user/login', {
+    const callLogin = await fetch('https://ptudwnc06.herokuapp.com/user/login', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -43,7 +43,7 @@ export const login = async (username, password) => {
 
 export const me = async (token) => {
     console.log(token)
-    const callMe = await fetch('http://ptudwnc06.herokuapp.com/me', {
+    const callMe = await fetch('https://ptudwnc06.herokuapp.com/me', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -60,7 +60,7 @@ export const me = async (token) => {
 }
 
 export const register = async (user) => {
-    const callRegister = await fetch('http://ptudwnc06.herokuapp.com/user/register', {
+    const callRegister = await fetch('https://ptudwnc06.herokuapp.com/user/register', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
